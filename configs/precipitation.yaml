@@ -1,0 +1,25 @@
+data:
+  zarr_url: gs://weatherbench2/datasets/era5/1959-2022-6h-64x32_equiangular_conservative.zarr
+  variable: total_precipitation_6hr
+  time_start: "2015-01-01"
+  time_end: "2020-12-31"
+  lat_slice: 32        # keep first 32 latitudes for 32×32 patches
+  grid_size: 32
+  train_split: 0.8
+  batch_size: 32
+  bias: 0.3            # systematic wet bias added to simulate NWP forecast
+  noise_std: 0.2       # random noise std for simulated forecast
+
+model:
+  in_channels: 1
+  hidden_channels: 16
+  out_channels: 1
+  n_layers: 3
+
+training:
+  learning_rate: 1e-3
+  max_epochs: 20
+  accelerator: auto
+
+mlflow:
+  experiment_name: precipitation_postprocessing

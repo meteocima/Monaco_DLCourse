@@ -1,0 +1,28 @@
+data:
+  zarr_url: gs://gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3
+  cities:
+    Rome:
+      lat: 41.9
+      lon: 12.5
+    Milan:
+      lat: 45.5
+      lon: 9.2
+    Berlin:
+      lat: 52.5
+      lon: 13.4
+  time_start: "2020-06-01"
+  time_end: "2020-08-31"
+  train_split: 0.8
+  batch_size: 64
+
+model:
+  hidden_sizes: [64, 32, 16]
+  dropout: 0.1
+
+training:
+  learning_rate: 1e-3
+  max_epochs: 30
+  accelerator: auto
+
+mlflow:
+  experiment_name: urban_thermal_comfort
