@@ -7,7 +7,9 @@ data:
   time_end: "2020-12-31"
   lat_slice: 32
   grid_size: 32
-  train_split: 0.8
+  train_split: 0.6
+  val_split: 0.2
+  test_split: 0.2
   batch_size: 32
 
 model:
