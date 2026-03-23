@@ -22,4 +22,5 @@ dependencies = [
     "gcsfs",
     "fsspec",
     "aiohttp",
+    "cartopy",
 ]
