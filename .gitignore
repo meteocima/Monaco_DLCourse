@@ -40,6 +40,10 @@ multirun/
 
 # Claude Code
 .claude/
+CLAUDE.md
+
+# Course admin docs
+*.docx
 
 # OS
 .DS_Store

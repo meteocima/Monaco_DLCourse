@@ -11,10 +11,10 @@ Open the notebooks directly in Google Colab:
 
 | Notebook | Colab |
 |----------|-------|
-| Precipitation Post-Processing | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USER/202605_Monaco_DLcourse/blob/main/notebooks/01_precipitation_postprocessing.ipynb) |
-| Urban Thermal Comfort | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USER/202605_Monaco_DLcourse/blob/main/notebooks/02_urban_thermal_comfort.ipynb) |
+| Precipitation Post-Processing | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/01_precipitation_postprocessing.ipynb) |
+| Urban Thermal Comfort | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/02_urban_thermal_comfort.ipynb) |
 
-No local setup required -- all dependencies are installed within the notebooks.
+No local setup required — the notebooks auto-clone the repo and install dependencies via [uv](https://docs.astral.sh/uv/) when running on Colab.
 
 ## Project Structure
 
@@ -30,7 +30,7 @@ slides/
 src/
   utils.py                               -- Shared plotting & metrics utilities
 pyproject.toml                           -- Project metadata & dependencies
-CLAUDE.md                                -- Developer guide
+requirements.txt                         -- Pinned deps for Colab installs
 README.md                                -- This file
 ```
 
@@ -62,4 +62,5 @@ uv run jupyter lab
 - [Zarr Docs](https://zarr.readthedocs.io/)
 - [Hydra Docs](https://hydra.cc/docs/intro/)
 - [MLFlow Docs](https://mlflow.org/docs/latest/)
-- [ERA5 on CDS](https://cds.climate.copernicus.eu/)
+- [WeatherBench 2](https://weatherbench2.readthedocs.io/) — ERA5 Zarr on Google Cloud (Notebook 1)
+- [ARCO-ERA5](https://github.com/google-research/arco-era5) — Full ERA5 Zarr on Google Cloud (Notebook 2)
