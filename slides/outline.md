@@ -28,6 +28,10 @@
   - Config composition, overrides, multirun sweeps
 - **MLFlow** — experiment tracking, model registry
   - Logging metrics, parameters, and artifacts
+- **uv** — fast, modern Python package & project manager
+  - `uv init`, `uv add`, `uv sync`, `uv run` workflow
+  - Replaces pip + virtualenv + pip-tools
+  - On Colab: `uv pip install --system` (no `.venv` needed)
 - How these tools fit together in a real workflow
 
 ## 3. Hands-on 1: Precipitation Forecast Post-Processing (~30 min)
