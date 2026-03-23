@@ -1,0 +1,14 @@
+torch
+pytorch-lightning
+zarr
+hydra-core
+omegaconf
+mlflow
+xarray
+numpy
+matplotlib
+scipy
+pandas
+gcsfs
+fsspec
+aiohttp

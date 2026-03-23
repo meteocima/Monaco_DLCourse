@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+wheels/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data artifacts (keep small samples, ignore large files)
+data/*.nc
+data/*.grib
+data/*.grib2
+data/*.zarr/
+!data/sample_precipitation.zarr/
+!data/sample_urban_climate.zarr/
+
+# MLFlow
+mlruns/
+mlartifacts/
+
+# Hydra outputs
+outputs/
+multirun/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

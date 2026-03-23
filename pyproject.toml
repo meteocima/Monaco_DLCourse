@@ -1,0 +1,25 @@
+[project]
+name = "dl-course-module2"
+version = "0.1.0"
+description = "Module 2: Deep Learning best practices & applications — CIMA Foundation PhD course"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Luca Monaco", email = "luca.monaco@cimafoundation.org" },
+]
+dependencies = [
+    "torch",
+    "pytorch-lightning",
+    "zarr",
+    "hydra-core",
+    "mlflow",
+    "xarray",
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "pandas",
+    "jupyter",
+    "gcsfs",
+    "fsspec",
+    "aiohttp",
+]
