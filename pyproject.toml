@@ -24,3 +24,8 @@ dependencies = [
     "aiohttp",
     "cartopy",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.7",
+]
