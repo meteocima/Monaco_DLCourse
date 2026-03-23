@@ -45,6 +45,9 @@ CLAUDE.md
 # Course admin docs
 *.docx
 
+# Slides (shared separately)
+slides/
+
 # OS
 .DS_Store
 Thumbs.db
