@@ -2,7 +2,7 @@ data:
   era5_zarr_url: gs://weatherbench2/datasets/era5/1959-2022-6h-64x32_equiangular_conservative.zarr
   hres_zarr_url: gs://weatherbench2/datasets/hres/2016-2022-0012-64x32_equiangular_conservative.zarr
   variable: total_precipitation_6hr
-  lead_time: "1 days"   # forecast lead time to post-process
+  max_lead_time: "2 days"  # include all 6h steps up to this horizon
   time_start: "2016-01-01"
   time_end: "2020-12-31"
   lat_slice: 32
@@ -13,7 +13,7 @@ data:
   batch_size: 32
 
 model:
-  in_channels: 1
+  in_channels: 2       # forecast + normalised lead-time channel
   hidden_channels: 16
   out_channels: 1
   n_layers: 3
