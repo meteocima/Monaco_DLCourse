@@ -3,8 +3,8 @@ data:
   hres_zarr_url: gs://weatherbench2/datasets/hres/2016-2022-0012-64x32_equiangular_conservative.zarr
   variable: total_precipitation_6hr
   max_lead_time: "2 days"  # include all 6h steps up to this horizon
-  time_start: "2016-01-01"
-  time_end: "2020-12-31"
+  time_start: "2018-01-01"
+  time_end: "2018-02-28"
   lat_slice: 32
   grid_size: 32
   train_split: 0.6
