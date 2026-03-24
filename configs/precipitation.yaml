@@ -5,11 +5,11 @@ data:
   max_lead_time: "2 days"  # include all 6h steps up to this horizon
   time_start: "2018-01-01"
   time_end: "2018-02-28"
+  test_start: "2021-01-01"
+  test_end: "2021-02-28"
   lat_slice: 32
   grid_size: 32
   train_split: 0.6
-  val_split: 0.2
-  test_split: 0.2
   batch_size: 32
 
 model:
