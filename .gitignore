@@ -40,7 +40,6 @@ multirun/
 
 # Claude Code
 .claude/
-CLAUDE.md
 
 # Course admin docs
 *.docx
