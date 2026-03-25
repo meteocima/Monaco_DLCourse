@@ -2,7 +2,7 @@
 
 **Module 2** of the CIMA Foundation PhD Course on Deep Learning
 **Instructor:** Luca Monaco
-**Date:** 27 May 2026, 14:00-16:00 CEST
+**Date:** 27 May 2026, 14:00-15:00 CEST
 **Format:** Remote (Microsoft Teams) + Google Colab
 
 ## Quick Start
@@ -26,7 +26,7 @@ data/
   README.md                              -- Data provenance & download instructions
   download.py                            -- CDS API download helper
 slides/
-  outline.md                             -- Presentation outline (2h session)
+  outline.md                             -- Presentation outline (1h session)
 src/
   utils.py                               -- Shared plotting & metrics utilities
 pyproject.toml                           -- Project metadata & dependencies
@@ -36,11 +36,11 @@ README.md                                -- This file
 
 ## Session Outline
 
-1. **Introduction to Deep Learning** (~20 min) -- neurons, backprop, CNN/RNN/Transformer overview
-2. **The Modern ML Stack** (~20 min) -- Zarr, PyTorch Lightning, Hydra, MLFlow
-3. **Hands-on 1: Precipitation Post-Processing** (~30 min) -- CNN bias correction with full stack
-4. **Hands-on 2: Urban Thermal Comfort** (~30 min) -- MLP regression with full stack
-5. **Wrap-up & Q&A** (~20 min)
+1. **Introduction to Deep Learning** (~10 min) -- neurons, backprop, CNN/RNN/Transformer overview
+2. **The Modern ML Stack** (~10 min) -- Zarr, PyTorch Lightning, Hydra, MLFlow
+3. **Hands-on 1: Precipitation Post-Processing** (~15 min) -- CNN bias correction with full stack
+4. **Hands-on 2: Urban Thermal Comfort** (~15 min) -- MLP regression with full stack
+5. **Wrap-up & Q&A** (~10 min)
 
 ## Prerequisites
 

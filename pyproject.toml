@@ -23,6 +23,7 @@ dependencies = [
     "fsspec",
     "aiohttp",
     "cartopy",
+    "python-pptx>=1.0.2",
 ]
 
 [dependency-groups]
