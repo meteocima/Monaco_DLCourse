@@ -1,66 +1,78 @@
 # Deep Learning Best Practices & Applications
 
+> Learn to apply deep learning to real geoscience problems using a modern, production-ready ML stack — all from your browser, no setup required.
+
 **Module 2** of the CIMA Foundation PhD Course on Deep Learning
-**Instructor:** Luca Monaco
-**Date:** 27 May 2026, 14:00-15:00 CEST
-**Format:** Remote (Microsoft Teams) + Google Colab
+**Instructor:** Luca Monaco | **Date:** 27 May 2026, 14:00-15:00 CEST | **Format:** Remote (Teams) + Google Colab
 
-## Quick Start
+---
 
-Open the notebooks directly in Google Colab:
+## Get Started in One Click
+
+Pick a notebook and open it directly in Google Colab — everything installs automatically:
+
+| Notebook | What you'll build | Colab |
+|----------|-------------------|-------|
+| **Precipitation Post-Processing** | A CNN that corrects bias in NWP rainfall forecasts using ERA5 data | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/01_precipitation_postprocessing.ipynb) |
+| **Urban Thermal Comfort** | An MLP that predicts "feels-like" temperature (UTCI) from meteorological variables | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/02_urban_thermal_comfort.ipynb) |
+
+<details>
+<summary>Versione italiana dei notebook</summary>
 
 | Notebook | Colab |
 |----------|-------|
-| Precipitation Post-Processing | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/01_precipitation_postprocessing.ipynb) |
-| Precipitation Post-Processing (IT) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/01_precipitation_postprocessing_it.ipynb) |
-| Urban Thermal Comfort | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/02_urban_thermal_comfort.ipynb) |
-| Urban Thermal Comfort (IT) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/02_urban_thermal_comfort_it.ipynb) |
+| Post-Processing delle Precipitazioni | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/01_precipitation_postprocessing_it.ipynb) |
+| Comfort Termico Urbano | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/02_urban_thermal_comfort_it.ipynb) |
 
-No local setup required — the notebooks auto-clone the repo and install dependencies via [uv](https://docs.astral.sh/uv/) when running on Colab.
+</details>
 
-## Project Structure
+---
 
-```
-notebooks/
-  01_precipitation_postprocessing.ipynb     -- CNN for NWP bias correction
-  01_precipitation_postprocessing_it.ipynb -- Italian translation
-  02_urban_thermal_comfort.ipynb           -- MLP for UTCI prediction
-  02_urban_thermal_comfort_it.ipynb        -- Italian translation
-data/
-  README.md                              -- Data provenance & download instructions
-  download.py                            -- CDS API download helper
-slides/
-  outline.md                             -- Presentation outline (1h session)
-src/
-  utils.py                               -- Shared plotting & metrics utilities
-pyproject.toml                           -- Project metadata & dependencies
-requirements.txt                         -- Pinned deps for Colab installs
-README.md                                -- This file
-```
+## What You'll Learn
 
-## Session Outline
+By the end of this session you will be able to:
 
-1. **Introduction to Deep Learning** (~10 min) -- neurons, backprop, CNN/RNN/Transformer overview
-2. **The Modern ML Stack** (~10 min) -- Zarr, PyTorch Lightning, Hydra, MLFlow
-3. **Hands-on 1: Precipitation Post-Processing** (~15 min) -- CNN bias correction with full stack
-4. **Hands-on 2: Urban Thermal Comfort** (~15 min) -- MLP regression with full stack
-5. **Wrap-up & Q&A** (~10 min)
+- **Build and train** neural networks (CNN, MLP) in PyTorch Lightning with minimal boilerplate
+- **Access cloud data** directly from Zarr stores (ERA5 reanalysis) — no downloads, no NetCDF wrangling
+- **Manage experiments** with structured configs (Hydra/OmegaConf) and automatic tracking (MLFlow)
+- **Evaluate models** with proper metrics, visualisations, and feature-importance analysis
+- **Reproduce results** using a modern Python toolchain (uv) with locked dependencies
+
+## The Stack
+
+| Tool | Role |
+|------|------|
+| [**Zarr**](https://zarr.readthedocs.io/) + [**xarray**](https://xarray.dev/) | Cloud-native, chunked N-dimensional data — read only what you need |
+| [**PyTorch Lightning**](https://lightning.ai/docs/pytorch/stable/) | Structured training loops, callbacks, multi-GPU — without the boilerplate |
+| [**Hydra**](https://hydra.cc/docs/intro/) / **OmegaConf** | YAML-based configuration with overrides and hyperparameter sweeps |
+| [**MLFlow**](https://mlflow.org/docs/latest/) | Experiment tracking — log metrics, parameters, and artifacts automatically |
+| [**uv**](https://docs.astral.sh/uv/) | Fast, modern Python package manager (replaces pip + virtualenv) |
+
+## Session Outline (1 hour)
+
+| Time | Topic |
+|------|-------|
+| ~10 min | **Introduction to Deep Learning** — neurons, backprop, CNN / RNN / Transformer overview |
+| ~10 min | **The Modern ML Stack** — how Zarr, Lightning, Hydra, and MLFlow fit together |
+| ~15 min | **Hands-on 1: Precipitation Post-Processing** — train a CNN to correct NWP bias |
+| ~15 min | **Hands-on 2: Urban Thermal Comfort** — train an MLP to predict UTCI |
+| ~10 min | **Wrap-up & Q&A** |
 
 ## Prerequisites
 
-- Google account (for Colab)
-- Basic Python knowledge
-- Familiarity with NumPy and basic ML concepts
+- A **Google account** (to run the notebooks on Colab)
+- **Basic Python** — if you can write a `for` loop and use NumPy arrays, you're ready
+- Some familiarity with ML concepts (train/test split, loss functions) is helpful but not required — the notebooks explain everything step by step
 
-## Local Development
+## Running Locally
 
 ```bash
 # Requires uv (https://docs.astral.sh/uv/)
-uv sync
-uv run jupyter lab
+uv sync              # install all dependencies
+uv run jupyter lab   # launch the notebooks
 ```
 
-## References
+## References & Further Reading
 
 - [PyTorch Lightning Docs](https://lightning.ai/docs/pytorch/stable/)
 - [Zarr Docs](https://zarr.readthedocs.io/)
