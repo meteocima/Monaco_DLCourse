@@ -3,7 +3,7 @@
 > Learn to apply deep learning to real geoscience problems using a modern, production-ready ML stack — all from your browser, no setup required.
 
 **Module 2** of the CIMA Foundation PhD Course on Deep Learning
-**Instructor:** Luca Monaco | **Date:** 27 May 2026, 14:00-15:00 CEST | **Format:** Remote (Teams) + Google Colab
+**Instructor:** Luca Monaco | **Date:** 27 May 2026, 14:00-16:00 CEST | **Format:** Remote (Teams) + Google Colab
 
 ---
 
@@ -48,15 +48,15 @@ By the end of this session you will be able to:
 | [**MLFlow**](https://mlflow.org/docs/latest/) | Experiment tracking — log metrics, parameters, and artifacts automatically |
 | [**uv**](https://docs.astral.sh/uv/) | Fast, modern Python package manager (replaces pip + virtualenv) |
 
-## Session Outline (1 hour)
+## Session Outline (2 hours)
 
 | Time | Topic |
 |------|-------|
-| ~10 min | **Introduction to Deep Learning** — neurons, backprop, CNN / RNN / Transformer overview |
-| ~10 min | **The Modern ML Stack** — how Zarr, Lightning, Hydra, and MLFlow fit together |
-| ~15 min | **Hands-on 1: Precipitation Post-Processing** — train a CNN to correct NWP bias |
-| ~15 min | **Hands-on 2: Urban Thermal Comfort** — train an MLP to predict UTCI |
-| ~10 min | **Wrap-up & Q&A** |
+| ~20 min | **Introduction to Deep Learning** — neurons, backprop, CNN / RNN / Transformer overview |
+| ~20 min | **The Modern ML Stack** — how Zarr, Lightning, Hydra, and MLFlow fit together |
+| ~20 min | **Slides wrap-up & Q&A** |
+| ~30 min | **Hands-on 1: Precipitation Post-Processing** — train a CNN to correct NWP bias |
+| ~30 min | **Hands-on 2: Urban Thermal Comfort** — train an MLP to predict UTCI |
 
 ## Prerequisites
 
