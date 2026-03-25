@@ -2,8 +2,10 @@
 
 > Learn to apply deep learning to real geoscience problems using a modern, production-ready ML stack — all from your browser, no setup required.
 
-**Module 2** of the CIMA Foundation PhD Course on Deep Learning
-**Instructor:** Luca Monaco | **Date:** 27 May 2026, 14:00-16:00 CEST | **Format:** Remote (Teams) + Google Colab
+**Module 2** of the CIMA Foundation PhD Course on Deep Learning<br>
+**Instructor:** Luca Monaco<br>
+**Date:** 27 May 2026, 14:00-16:00 CEST<br>
+**Format:** Remote (Teams) + Google Colab
 
 ---
 
