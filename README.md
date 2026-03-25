@@ -12,7 +12,9 @@ Open the notebooks directly in Google Colab:
 | Notebook | Colab |
 |----------|-------|
 | Precipitation Post-Processing | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/01_precipitation_postprocessing.ipynb) |
+| Precipitation Post-Processing (IT) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/01_precipitation_postprocessing_it.ipynb) |
 | Urban Thermal Comfort | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/02_urban_thermal_comfort.ipynb) |
+| Urban Thermal Comfort (IT) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meteocima/Monaco_DLCourse/blob/main/notebooks/02_urban_thermal_comfort_it.ipynb) |
 
 No local setup required — the notebooks auto-clone the repo and install dependencies via [uv](https://docs.astral.sh/uv/) when running on Colab.
 
@@ -20,8 +22,10 @@ No local setup required — the notebooks auto-clone the repo and install depend
 
 ```
 notebooks/
-  01_precipitation_postprocessing.ipynb  -- CNN for NWP bias correction
-  02_urban_thermal_comfort.ipynb         -- MLP for UTCI prediction
+  01_precipitation_postprocessing.ipynb     -- CNN for NWP bias correction
+  01_precipitation_postprocessing_it.ipynb -- Italian translation
+  02_urban_thermal_comfort.ipynb           -- MLP for UTCI prediction
+  02_urban_thermal_comfort_it.ipynb        -- Italian translation
 data/
   README.md                              -- Data provenance & download instructions
   download.py                            -- CDS API download helper
